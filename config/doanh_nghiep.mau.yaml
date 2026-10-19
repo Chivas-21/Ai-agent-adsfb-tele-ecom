@@ -1,0 +1,51 @@
+# MẪU hồ sơ doanh nghiệp cho AI AGENT — chép thành config/doanh_nghiep.yaml rồi điền.
+# Khoá / token để trong config/.env (chép từ config/.env.mau). Đối tượng quảng cáo: config/doi_tuong.yaml.
+# Lấy ID: page + tài khoản QC → nhờ Claude chạy `python src/khoi_tao.py --meta` (đọc me/accounts, adaccounts).
+
+ten: "Tên Doanh Nghiệp"
+ten_ngan: dn                     # chữ thường, không dấu, không cách (tên máy chủ MCP "<ten_ngan>-fb")
+
+meta:
+  graph: v23.0
+  pages:
+    page1: {id: "000000000000000", ten: "Tên page chính"}
+  page_mac_dinh: page1
+  tai_khoan:
+    tk1: "000000000000000"       # ID tài khoản quảng cáo, không có "act_"
+  tai_khoan_mac_dinh: tk1
+  tai_khoan_quet_bai: [tk1]      # tài khoản chạy chính (quét bài đã chạy ads, sở thích hay dùng)
+  hau_to_chien_dich: Team        # tên chiến dịch: "<Mã SP> | <Tên SP> - <hau_to> - <DD/MM>"
+  danh_muc: ["Váy", "Áo", "Quần"]
+  muc_tieu_mac_dinh: tro_chuyen  # tro_chuyen | mua_hang | gia_tri
+  gioi_tinh: [2]                 # 1 nam, 2 nữ; [] = tất cả
+  dia_ly: {countries: ["VN"], location_types: ["home", "recent"]}
+  vi_tri:
+    publisher_platforms: ["facebook", "instagram", "messenger"]
+    facebook_positions: ["feed", "story", "facebook_reels", "marketplace"]
+    instagram_positions: ["stream", "story", "reels"]
+    messenger_positions: ["story"]
+    device_platforms: ["mobile"]
+  gioi_han: {toi_da_nhom: 500000, toi_da_tong: 2000000, toi_da_so_nhom: 10}
+  tu_chung_san_pham: ["váy", "áo", "quần", "bộ", "set", "đầm"]
+
+# Link trang "Yêu cầu lên camp FB" sau khi đăng (python html/fb-ads-yeu-cau/build.py rồi nhờ Claude đăng artifact)
+trang_yeu_cau: ""
+
+nhanh:
+  kenh_san: {42: "Shopee", 48: "TikTok Shop"}   # saleChannel trên Nhanh → kênh sàn
+  kho: {}                                         # depotId → tên kho
+  kho_tong: 0                                     # depotId kho tổng (tồn có thể bán cho /topsp)
+
+bao_cao:
+  nhan_vien: []                  # tên người tạo đơn trên Nhanh cần báo doanh thu
+  cua_hang: []                   # tên người lập hoá đơn bán lẻ (cửa hàng)
+  ty_le_phi_mac_dinh: {"Shopee": 0.30, "TikTok Shop": 0.25}
+
+pancake:
+  pages: []                      # - {token_env: PANCAKE_TOKEN_PAGE1, id: "…", ten: "…"}
+  nv_nhanh: {}                   # "Tên sale trên Pancake": "Tên người tạo đơn trên Nhanh"
+  the_chot: ["Done"]             # thẻ hội thoại = đã chốt đơn
+
+san:
+  shopee_shops: []               # tên shop đúng như Shopee hiện ở /portal/shop (theo thứ tự dòng)
+  co_tiktok: false

@@ -1,0 +1,98 @@
+{
+ "auto_follow_up": {
+  "text": "Xin chào {{user_first_name}}! Bạn có thắc mắc nào cần trao đổi thêm với chúng tôi không?"
+ },
+ "auto_follow_up_disabled": false,
+ "reengagement": {
+  "text": "Xin chào {{user_first_name}}! Bạn có thắc mắc nào cần trao đổi thêm với chúng tôi không?",
+  "include_products": false
+ },
+ "reengagement_disabled": true,
+ "type": "VISUAL_EDITOR",
+ "version": 2,
+ "landing_screen_type": "welcome_message",
+ "media_type": "text",
+ "text_format": {
+  "customer_action_type": "ice_breakers",
+  "message": {
+   "ice_breakers": [
+    {
+     "title": "Có những size gì",
+     "response": null
+    }
+   ],
+   "quick_replies": [],
+   "text": "Chào bạn {{user_first_name}}! Shop có thể giúp gì cho bạn ạ? Bạn cho shop xin chiều cao, cân nặng để tư vấn size phù hợp nhé!"
+  },
+  "in_thread_multiphoto_carousel": {
+   "is_enabled": true,
+   "button": {
+    "action_prefill": "Sản phẩm này còn hàng không?",
+    "response": "Cảm ơn bạn đã quan tâm. Chúng tôi sẽ liên hệ lại với bạn để thông báo về tình trạng hàng của sản phẩm này.",
+    "title": "Hỏi tình trạng hàng",
+    "type": "availability"
+   }
+  }
+ },
+ "image_format": {
+  "customer_action_type": "quick_replies",
+  "message": {
+   "attachment": {
+    "type": "template",
+    "payload": {
+     "template_type": "generic",
+     "elements": [
+      {
+       "title": "",
+       "buttons": [],
+       "image_hash": ""
+      }
+     ]
+    }
+   },
+   "quick_replies": [
+    {
+     "title": "Tôi muốn tìm hiểu thêm",
+     "content_type": "text",
+     "response_type": "text"
+    }
+   ],
+   "text": "Em chào chị {{user_first_name}}! Em là CSKH bên LAMME ạ. Chị ưng mẫu quần Cici bên em đúng không ạ. Chị cho em xin chiều cao cân nặng em tư vấn size phù hợp cho mình nha!!"
+  }
+ },
+ "video_format": {
+  "customer_action_type": "quick_replies",
+  "message": {
+   "attachment": {
+    "type": "video",
+    "payload": {
+     "attachment_id": ""
+    }
+   },
+   "quick_replies": [
+    {
+     "title": "Tôi muốn tìm hiểu thêm",
+     "content_type": "text",
+     "response_type": "text"
+    }
+   ],
+   "text": "Em chào chị {{user_first_name}}! Em là CSKH bên LAMME ạ. Chị ưng mẫu quần Cici bên em đúng không ạ. Chị cho em xin chiều cao cân nặng em tư vấn size phù hợp cho mình nha!!"
+  }
+ },
+ "user_edit": true,
+ "surface": "visual_editor_new",
+ "ai_generated_icebreaker_toggle_enabled": true,
+ "ai_gen_conversation_model_version": "IBV1",
+ "ai_gen_welcome_message_model_version": null,
+ "ai_gen_nudge_model_version": null,
+ "nudge_was_ai_generated": false,
+ "is_eligible_for_customized_greeting": false,
+ "is_user_editing": false,
+ "is_eligible_for_leveraging_inbox_faqs": false,
+ "welcome_message_edited": true,
+ "has_ai_generated_welcome_message": false,
+ "ice_breakers_edited": true,
+ "performance_booster_enabled": true,
+ "ctm_deprecate_quick_replies_enabled": false,
+ "template_id": "2159408154926432"
+}

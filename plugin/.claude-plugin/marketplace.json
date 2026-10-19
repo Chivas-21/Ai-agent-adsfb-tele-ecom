@@ -1,0 +1,11 @@
+{
+  "name": "ai-agent-kinh-doanh",
+  "owner": { "name": "L'AMME" },
+  "plugins": [
+    {
+      "name": "ai-agent",
+      "source": "./ai-agent",
+      "description": "AI AGENT bán hàng online: lên camp FB từ hàng đợi, cập nhật chi phí QC + phí sàn Shopee/TikTok, báo cáo Telegram — dùng chung cho nhiều doanh nghiệp qua config/doanh_nghiep.yaml."
+    }
+  ]
+}

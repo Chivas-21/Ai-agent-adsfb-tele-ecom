@@ -1,0 +1,10 @@
+config/.env
+config/doanh_nghiep.yaml
+config/doi_tuong.yaml
+config/mau_tin_nhan.json
+config/python.txt
+data/
+dist/
+__pycache__/
+*.pyc
+html/fb-ads-yeu-cau/fb-ads-yeu-cau.html

@@ -1,0 +1,6 @@
+{
+  "name": "ai-agent",
+  "version": "1.0.0",
+  "description": "AI AGENT bán hàng online (đóng gói từ AI AGENT LAMME): lên camp Facebook từ trang yêu cầu, cập nhật CP QC + doanh thu hạng mục + phí sàn Shopee/TikTok qua Chrome, báo cáo Telegram. Mở trong thư mục code AI AGENT đã có config/doanh_nghiep.yaml.",
+  "author": { "name": "L'AMME" }
+}

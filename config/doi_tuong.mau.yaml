@@ -1,0 +1,33 @@
+# MẪU đối tượng quảng cáo — chép thành config/doi_tuong.yaml. Mỗi mục = 1 nhóm quảng cáo khi lên camp.
+# tep / loai_tru_da_mua: khoá là TÊN tài khoản QC trong config/doanh_nghiep.yaml (meta.tai_khoan).
+# Đối tượng đã lưu trên Meta tự thêm với mã luu_… (python src/fb_tep_da_luu.py).
+mac_dinh: [broad]
+khong_loai_tru: [rt_tuongtac]
+loai_tru_da_mua: {}
+#  tk1:
+#  - {id: "…", name: "Đã mua hàng - 90 ngày"}
+doi_tuong:
+  broad:
+    ten_nhom: BROAD
+    mo_ta: Rộng, Advantage+ bật — để Meta tự tìm
+    tuoi: [22, 65]
+    goi_y: [25, 45]
+    adv: 1
+    ngan_sach: 80000
+  int_muasam:
+    ten_nhom: INT(MUA SẮM)
+    mo_ta: Sở thích mua sắm online
+    tuoi: [22, 44]
+    adv: 0
+    so_thich:
+    - interests:
+      - {id: "6003346592981", name: Mua sắm online (bán lẻ)}
+    ngan_sach: 60000
+#  rt_tuongtac:
+#    ten_nhom: RT TƯƠNG TÁC
+#    mo_ta: Người đã tương tác page 180 ngày (bám đuổi)
+#    tuoi: [22, 50]
+#    adv: 0
+#    tep:
+#      tk1: [{id: "…", name: "Tương tác với Trang - 180 ngày"}]
+#    ngan_sach: 60000
